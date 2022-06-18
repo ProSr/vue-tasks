@@ -1,7 +1,7 @@
 <script>
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
-	import App from './tutorial/1.Introduction/5.nested-components/App.svelte'
+	import App from './tutorial/1.Introduction/6.html-tags.svelte'
 </script>
 
 <main>

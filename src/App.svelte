@@ -1,14 +1,14 @@
 <script>
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
-	import App from './tutorial/1.Introduction/6.html-tags.svelte'
+	import Tutorial from './lib/tutorial/1.Introduction/7.making-an-app.svelte'
 </script>
 
 <main>
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello world!</h1>
 
-	<App/>
+	<Tutorial />
   <Counter />
 
   <p>

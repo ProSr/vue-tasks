@@ -1,5 +1,5 @@
 <script>
-	import Nested from './Nested.svelte'
+	import Nested from './nested-components/Nested.svelte'
 </script>
 
 <p>This is a paragraph.</p>

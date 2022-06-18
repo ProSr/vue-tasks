@@ -1,0 +1,275 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.234.0/containers/vue
+{
+	"name": "Svelte (noshimorimoshi)",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		// Update 'VARIANT' to pick a Node version: 12, 14, 16
+		"args": {
+			"VARIANT": "16"
+		}
+	},
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"diffEditor.ignoreTrimWhitespace": true,
+		"diffEditor.renderSideBySide": false,
+		"editor.cursorBlinking": "expand",
+		"editor.cursorStyle": "block",
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.detectIndentation": false,
+		"editor.emptySelectionClipboard": false,
+		"editor.find.globalFindClipboard": true,
+		"editor.find.seedSearchStringFromSelection": "never",
+		"editor.fontFamily": "Fira Code",
+		"editor.fontLigatures": true,
+		"editor.insertSpaces": false,
+		"editor.lineNumbers": "interval",
+		"editor.minimap.enabled": false,
+		"editor.multiCursorModifier": "alt",
+		"editor.overviewRulerBorder": false,
+		// "editor.overviewRulerLanes"
+		// "editor.parameterHints"
+		"editor.quickSuggestions": {
+			"other": true,
+			"comments": true,
+			"strings": true
+		},
+		// "editor.renderControlCharacters"
+		"editor.renderLineHighlight": "gutter",
+		"editor.scrollBeyondLastColumn": 5,
+		"editor.showFoldingControls": "always",
+		"editor.smoothScrolling": true,
+		"editor.snippetSuggestions": "top",
+		"editor.suggestSelection": "recentlyUsedByPrefix",
+		"editor.tabCompletion": "off",
+		"editor.tabSize": 2,
+		// "editor.useTabStops"
+		// "editor.wordBasedSuggestions"
+		// "editor.wordSeparators"
+		"editor.wordWrap": "on",
+		"scm.diffDecorationsGutterWidth": 5,
+		"workbench.activityBar.visible": false,
+		"workbench.colorCustomizations": {
+			"editorCursor.background": "#fff",
+			"editorCursor.foreground": "#114394"
+		},
+		"workbench.commandPalette.history": 0,
+		"workbench.editor.revealIfOpen": true,
+		"workbench.editor.showIcons": false,
+		"workbench.editor.swipeToNavigate": true,
+		"workbench.editor.tabCloseButton": "left",
+		"workbench.iconTheme": null,
+		// "workbench.settings.settingsSearchTocBehavior"
+		"workbench.sideBar.location": "right",
+		"workbench.startupEditor": "none",
+		"workbench.statusBar.feedback.visible": false,
+		"workbench.statusBar.visible": true,
+		"workbench.tips.enabled": false,
+		"window.closeWhenEmpty": true,
+		"window.openFoldersInNewWindow": "on",
+		"window.restoreFullscreen": true,
+		"window.restoreWindows": "none",
+		"window.titleBarStyle": "native",
+		"files.associations": {
+			"*.database": "json",
+			"*.jxa": "javascript",
+			"*.jxainc": "javascript"
+		},
+		"files.defaultLanguage": "html",
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/node_modules": false
+		},
+		"files.useExperimentalFileWatcher": true,
+		"zenMode.centerLayout": false,
+		"explorer.confirmDelete": false,
+		"explorer.confirmDragAndDrop": false,
+		"explorer.decorations.colors": false,
+		"explorer.openEditors.visible": 0,
+		"search.globalFindClipboard": true,
+		"search.quickOpen.includeSymbols": true,
+		"search.smartCase": true,
+		// "search.useRipgrep"
+		"keyboard.touchbar.enabled": false,
+		"update.mode": "none",
+		// "debug.enableAllHovers"
+		"debug.inlineValues": true,
+		"debug.internalConsoleOptions": "neverOpen",
+		"debug.openDebug": "neverOpen",
+		"debug.showInStatusBar": "never",
+		"debug.toolBarLocation": "docked",
+		"html.format.extraLiners": "",
+		"html.format.maxPreserveNewLines": 0,
+		"html.format.wrapLineLength": 0,
+		// "javascript.format.insertSpaceAfterSemicolonInForStatements"
+		// "javascript.implicitProjectConfig.checkJs" // see interactive_Playground
+		// "javascript.implicitProjectConfig.experimentalDecorators"
+		// "javascript.nameSuggestions"
+		// "javascript.preferences.importModuleSpecifier"
+		// "javascript.preferences.quoteStyle"
+		// "javascript.referencesCodeLens.enabled"
+		// "javascript.suggestionActions.enabled"
+		"javascript.validate.enable": false,
+		"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+		"typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+		// "typescript.format.insertSpaceAfterSemicolonInForStatements"
+		// "typescript.implicitProjectConfig.checkJs" // see interactive_Playground
+		// "typescript.implicitProjectConfig.experimentalDecorators"
+		// "typescript.nameSuggestions"
+		// "typescript.preferences.importModuleSpecifier"
+		// "typescript.preferences.quoteStyle"
+		// "typescript.referencesCodeLens.enabled"
+		// "typescript.suggestionActions.enabled"
+		"typescript.tsc.autoDetect": "off",
+		"typescript.validate.enable": false,
+		// "css.lint.argumentsInColorFunction"
+		"css.lint.boxModel": "error",
+		// "css.lint.compatibleVendorPrefixes"
+		"css.lint.duplicateProperties": "warning",
+		"css.lint.float": "warning",
+		// "css.lint.hexColorLength"
+		"css.lint.idSelector": "warning",
+		"css.lint.ieHack": "warning",
+		"css.lint.important": "warning",
+		"css.lint.universalSelector": "warning",
+		"css.lint.unknownAtRules": "error",
+		"css.lint.unknownVendorSpecificProperties": "warning",
+		"css.lint.vendorPrefix": "error",
+		"css.lint.zeroUnits": "warning",
+		"css.lint.importStatement": "warning",
+		// "less.lint.argumentsInColorFunction"
+		"less.lint.boxModel": "error",
+		// "less.lint.compatibleVendorPrefixes"
+		"less.lint.duplicateProperties": "warning",
+		"less.lint.float": "warning",
+		// "less.lint.hexColorLength"
+		"less.lint.idSelector": "warning",
+		"less.lint.ieHack": "warning",
+		"less.lint.important": "warning",
+		"less.lint.universalSelector": "warning",
+		"less.lint.unknownVendorSpecificProperties": "warning",
+		"less.lint.vendorPrefix": "error",
+		"less.lint.zeroUnits": "warning",
+		"less.lint.importStatement": "warning",
+		// "scss.lint.argumentsInColorFunction"
+		"scss.lint.boxModel": "error",
+		// "scss.lint.compatibleVendorPrefixes"
+		"scss.lint.duplicateProperties": "warning",
+		"scss.lint.float": "warning",
+		// "scss.lint.hexColorLength"
+		"scss.lint.idSelector": "warning",
+		"scss.lint.ieHack": "warning",
+		"scss.lint.important": "warning",
+		"scss.lint.universalSelector": "warning",
+		"scss.lint.unknownVendorSpecificProperties": "warning",
+		"scss.lint.vendorPrefix": "error",
+		"scss.lint.zeroUnits": "warning",
+		"scss.lint.importStatement": "warning",
+		"extensions.autoCheckUpdates": false,
+		"extensions.autoUpdate": false,
+		"extensions.closeExtensionDetailsOnViewChange": true,
+		"extensions.ignoreRecommendations": true,
+		"terminal.external.osxExec": "Termius.app",
+		"terminal.integrated.copyOnSelection": true,
+		"terminal.integrated.cursorBlinking": true,
+		// "terminal.integrated.drawBoldTextInBrightColors"
+		// "terminal.integrated.enableBell"
+		// "terminal.integrated.env.osx"
+		"terminal.integrated.fontFamily": "Fira Code",
+		"terminal.integrated.fontSize": 16,
+		"terminal.integrated.letterSpacing": 1,
+		// "terminal.integrated.macOptionClickForcesSelection"
+		// "terminal.integrated.setLocaleVariables"
+		"breadcrumbs.enabled": true,
+		"telemetry.enableCrashReporter": false,
+		"telemetry.enableTelemetry": false,
+		// "debug.node.autoAttach"
+		"[json]": {
+			"editor.cursorStyle": "underline"
+		},
+		"[jsonc]": {
+			"editor.cursorStyle": "line-thin"
+		},
+		// "eslint._legacyModuleResolve"
+		// "eslint.provideLintTask"
+		"eslint.options": {
+			"useEslintrc": true
+			// "configFile": "/Users/prokhor/Library/Application Support/Code/User/eslint/.eslintrc.json"
+		},
+		"eslint.format.enable": true,
+		"eslint.lintTask.enable": true,
+		"npm.scriptExplorerAction": "run",
+		"emmet.extensionsPath": [
+			"~/Library/Application Support/Code/User/emmet"
+		],
+		"emmet.includeLanguages": {
+			"vue-html": "html"
+			//"javascript": "javascriptreact"
+		},
+		"emmet.preferences": {
+			"filter.commentBefore": "\n<!-- /[#ID][.CLASS][] -->\n",
+			"filter.commentAfter": "",
+			"lorem.defaultLang": "ru",
+			"lorem.omitCommonPart": true,
+			"css.webkitProperties": "border-right,animation",
+			"css.mozProperties": "",
+			"css.oProperties": "null",
+			"css.msProperties": "null",
+			"caniuse.enabled": true,
+			"caniuse.vendors": true
+		},
+		"emmet.showSuggestionsAsSnippets": true,
+		"emmet.syntaxProfiles": {
+			"html": {
+				"filters": "bem"
+			}
+		},
+		"emmet.triggerExpansionOnTab": true,
+		"git.confirmSync": false,
+		// "git.countBadge"
+		"git.defaultCloneDirectory": "~/downloads",
+		// "git.detectSubmodules"
+		// "git.detectSubmodulesLimit"
+		// "git.enableCommitSigning"
+		"git.enableSmartCommit": true,
+		// "git.ignoredRepositories"
+		// "git.ignoreLegacyWarning"
+		// "git.ignoreLimitWarning"
+		// "git.ignoreMissingGitWarning"
+		"git.inputValidation": "always",
+		"git.showPushSuccessNotification": true,
+		"outline.problems.colors": false,
+		"sync.gist": "2cc073e8995208c0596cb07d822e203f",
+		"sync.quietSync": false,
+		"sync.removeExtensions": true,
+		"sync.syncExtensions": true,
+		"sync.autoDownload": false,
+		"sync.autoUpload": false,
+		"sync.forceDownload": false,
+		"security.workspace.trust.banner": "never",
+		"[javascript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"gulp.autoDetect": "on",
+		"npm.autoDetect": "on",
+		"files.autoSave": "afterDelay"
+	},
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"svelte.svelte-vscode"
+	],
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		3000
+	]//,
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "node"
+}

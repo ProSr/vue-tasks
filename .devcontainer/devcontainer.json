@@ -199,9 +199,7 @@
 		"eslint.format.enable": true,
 		"eslint.lintTask.enable": true,
 		"npm.scriptExplorerAction": "run",
-		"emmet.extensionsPath": [
-			"~/Library/Application Support/Code/User/emmet"
-		],
+		"emmet.extensionsPath": ["~/Library/Application Support/Code/User/emmet"],
 		"emmet.includeLanguages": {
 			"vue-html": "html"
 			//"javascript": "javascriptreact"
@@ -254,10 +252,6 @@
 		"npm.autoDetect": "on",
 		"files.autoSave": "afterDelay"
 	},
-	"extensions": [
-		"svelte.svelte-vscode"
-	],
-	"forwardPorts": [
-		3000
-	]
+	"extensions": ["svelte.svelte-vscode"],
+	"forwardPorts": [3000]
 }

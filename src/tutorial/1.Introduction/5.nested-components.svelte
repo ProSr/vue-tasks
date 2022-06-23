@@ -1,10 +1,11 @@
 <script>
-	import Nested from './nested-components/Nested.svelte'
+	import Nested from './nested-components/Nested.svelte';
 </script>
 
 <p>This is a paragraph.</p>
 <!--👇-->
-<Nested/>
+<Nested />
+
 <!--👆-->
 <style>
 	p {

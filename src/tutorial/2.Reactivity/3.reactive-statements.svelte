@@ -5,6 +5,7 @@
 		count += 1;
 	}
 	/* 1 of 3 reactive statement👉 */ $: /*👈 */ console.log('the count is ' + count);
+	/* HERE SVELTE-KIT BUG STARTS */
 	/* 2 of 3 reactive statement👉 */ $: /*👈 */ {
 		console.log('the count is ' + count);
 		alert('I SAID THE COUNT IS ' + count);
@@ -13,6 +14,7 @@
 		alert('count is dangerously high!');
 		count = 9;
 	}
+	/* HERE SVELTE-KIT BUG ENDS */
 </script>
 <!--1 of 1 👇 reactive assignment  -->
 <button on:click={handleClick}>

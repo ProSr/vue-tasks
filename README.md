@@ -1,23 +1,38 @@
-# Название проекта: svelte-tutorial
-## Описание 
-Ниже приводится описание вашего проекта. Хорошее описание ясно, коротко и точно. Опишите важность своего проекта и что он делает.
+# create-svelte
 
-## Оглавление
-необязательно, включать оглавление, чтобы другие люди могли быстро перемещаться по особенно длинным или подробным README.
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Установка
-Установка - это следующий раздел в эффективном README. Сообщите другим пользователям, как установить свой проект локально. Необязательно, включить gif, чтобы сделать процесс еще более понятным для других людей.
+## Creating a project
 
-## Использование. 
-Следующий раздел - это использование, в котором вы инструктируете других людей о том, как использовать свой проект после их установки. Это также будет хорошим местом для включения скриншотов вашего проекта в действии.
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Содействие
-более крупные проекты часто содержат разделы, посвященные содействию их проекту, в которых изложены инструкции о вкладе. Иногда это отдельный файл. Если у вас есть конкретные настройки вклада, объясните их, чтобы другие разработчики знали, как наилучшим образом способствовать вашей работе. Чтобы узнать больше о том, как помочь другим внести вклад, ознакомьтесь с руководством по настройке рекомендаций для участников репозитория.
+```bash
+# create a new project in the current directory
+npm init svelte
 
-## Кредиты
-Включите раздел для кредитов, чтобы выделить и связать авторов проекта.
+# create a new project in my-app
+npm init svelte my-app
+```
 
-## Лицензия
-Наконец, включите раздел для лицензии вашего проекта. Для получения дополнительной информации о выборе лицензии ознакомьтесь с руководством по лицензированию GitHub!
+## Developing
 
-_Ваш README должен содержать только необходимую информацию для разработчиков, чтобы начать использовать и вносить свой вклад в ваш проект. Более длинная документация лучше всего подходит для вики, описанных ниже._
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

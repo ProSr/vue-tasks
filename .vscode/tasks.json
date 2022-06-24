@@ -6,7 +6,7 @@
 		{
 			"label": "test",
 			"type": "shell",
-			"command": "npm run format && npm run lint",
+			"command": "npm run format",
 			"group": {
 				"kind": "test",
 				"isDefault": true

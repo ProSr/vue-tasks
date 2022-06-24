@@ -1,5 +1,5 @@
 <script>
-	import Task from '../tutorial/2.Reactivity/4.updating-arrays-and-objects.svelte';
+	import Task from '../tutorial/3.Props/1.declaring-props.svelte';
 </script>
 
 <Task />

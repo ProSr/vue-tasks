@@ -16,9 +16,10 @@
 	}
 	/* HERE SVELTE-KIT BUG ENDS */
 </script>
+
 <!--1 of 1 👇 reactive assignment  -->
 <button on:click={handleClick}>
-<!--1 of 1 👆 reactive assignment  -->
+	<!--1 of 1 👆 reactive assignment  -->
 	Clicked {count}
 	{count === 1 ? 'time' : 'times'}
 </button>

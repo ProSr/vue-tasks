@@ -250,7 +250,8 @@
 		},
 		"gulp.autoDetect": "on",
 		"npm.autoDetect": "on",
-		"files.autoSave": "afterDelay"
+		"files.autoSave": "afterDelay",
+		"svelte.enable-ts-plugin": true
 	},
 	"extensions": ["svelte.svelte-vscode"],
 	"forwardPorts": [3000]

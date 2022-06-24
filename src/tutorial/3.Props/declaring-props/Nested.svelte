@@ -2,9 +2,9 @@
 	/**
 	 * @type {string | number}
 	 */
-/* 👇 declaring props */
+	/* 👇 declaring props */
 	export let answer;
-/* 👆 declaring props */
+	/* 👆 declaring props */
 </script>
 
 <p>The answer is {answer}</p>

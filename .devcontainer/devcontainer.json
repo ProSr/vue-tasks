@@ -253,6 +253,5 @@
 		"files.autoSave": "afterDelay",
 		"svelte.enable-ts-plugin": true
 	},
-	"extensions": ["svelte.svelte-vscode"],
-	"forwardPorts": [3000]
+	"extensions": ["svelte.svelte-vscode"]
 }

@@ -1,5 +1,5 @@
 <script>
-	import Task from '../tutorial/3.Props/2.default-values.svelte';
+	import Task from '../tutorial/3.Props/3.spread-props.svelte';
 </script>
 
 <Task />

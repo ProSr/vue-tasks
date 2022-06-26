@@ -10,5 +10,5 @@
 </script>
 
 <!-- spread👇 props-->
-<Info {...pkg}/>
+<Info {...pkg} />
 <!-- spread👆 props-->

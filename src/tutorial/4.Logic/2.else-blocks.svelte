@@ -7,13 +7,9 @@
 </script>
 
 {#if user.loggedIn}
-	<button on:click={toggle}>
-		Log out
-	</button>
-<!--👇 else blocks-->
+	<button on:click={toggle}> Log out </button>
+	<!--👇 else blocks-->
 {:else}
-<!--👆 else blocks-->
-	<button on:click={toggle}>
-		Log in
-	</button>
+	<!--👆 else blocks-->
+	<button on:click={toggle}> Log in </button>
 {/if}

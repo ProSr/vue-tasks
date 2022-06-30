@@ -40,8 +40,8 @@ You can preview the production build with `npm run preview`.
 === == - == === == - == === == - == === == - == ===
 
 ```sh
-# git config --global user.name
-# git config --global user.email
+# git config --global user.name noshimorimoshi
+# git config --global user.email noshimorimoshi@mail.ru
 # lsof -i:<PORT_NO>
 # kill <PID>
 ```

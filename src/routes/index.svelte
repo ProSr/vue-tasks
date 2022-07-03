@@ -1,5 +1,5 @@
 <script>
-	import Task from '../tutorial/4.Logic/6.await-blocks.svelte';
+	import Task from '../tutorial/5.Events/1.dom-events.svelte';
 </script>
 
 <Task />

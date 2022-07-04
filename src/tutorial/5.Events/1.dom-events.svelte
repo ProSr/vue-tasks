@@ -6,8 +6,9 @@
 		m.y = event.clientY;
 	}
 </script>
-
+	<!-- dom 👇 events -->
 <div on:mousemove={handleMousemove}>
+	<!-- dom 👆 events -->
 	The mouse position is {m.x} x {m.y}
 </div>
 
